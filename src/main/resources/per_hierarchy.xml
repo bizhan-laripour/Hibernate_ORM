@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 5.3//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">
+<hibernate-mapping>
+
+    <class name="com.hibernate_Inheritance.table_per_hierarchy.xml.entity.Animal" discriminator-value="anim">
+       <id name="id">
+           <generator class="identity"/>
+       </id>
+        <discriminator column="type" type="java.lang.String"/>
+
+        <property name="name"/>
+        <property name="gender"/>
+
+        <subclass name="com.hibernate_Inheritance.table_per_hierarchy.xml.entity.Cat" discriminator-value="cat">
+            <property name="tail"/>
+        </subclass>
+
+        <subclass name="com.hibernate_Inheritance.table_per_hierarchy.xml.entity.Dog" discriminator-value="dog">
+            <property name="voice"/>
+        </subclass>
+    </class>
+</hibernate-mapping>
