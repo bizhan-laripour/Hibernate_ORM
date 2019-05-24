@@ -5,9 +5,9 @@
 <hibernate-mapping>
 
     <class name="com.hibernate_Inheritance.table_per_hierarchy.xml.entity.Animal" discriminator-value="anim">
-       <id name="id">
-           <generator class="identity"/>
-       </id>
+        <id name="id">
+            <generator class="identity"/>
+        </id>
         <discriminator column="type" type="java.lang.String"/>
 
         <property name="name"/>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 5.3//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">
+
+<hibernate-mapping>
+    <class name="com.hibernate_Inheritance.table_per_subClass.xml.entity.Animal">
+        <id name="id">
+            <generator class="identity"/>
+        </id>
+
+        <joined-subclass name="com.hibernate_Inheritance.table_per_subClass.xml.entity.Cat">
+            <key column="animalId" />
+            <property name="tail"/>
+        </joined-subclass>
+
+        <joined-subclass name="com.hibernate_Inheritance.table_per_subClass.xml.entity.Dog">
+            <key column="animalId"/>
+            <property name="voice"/>
+        </joined-subclass>
+    </class>
+</hibernate-mapping>
