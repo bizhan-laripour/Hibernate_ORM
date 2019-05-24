@@ -6,6 +6,7 @@ import javax.persistence.*;
 @DiscriminatorValue("dog")
 public class Dog extends Animal {
 
+
     private String voice;
 
     public String getVoice() {

@@ -15,6 +15,7 @@
 
         <subclass name="com.hibernate_Inheritance.table_per_hierarchy.xml.entity.Cat" discriminator-value="cat">
             <property name="tail"/>
+
         </subclass>
 
         <subclass name="com.hibernate_Inheritance.table_per_hierarchy.xml.entity.Dog" discriminator-value="dog">

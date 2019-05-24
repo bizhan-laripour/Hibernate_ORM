@@ -6,6 +6,7 @@ public class Animal {
 
     private String name;
 
+
     private String gender;
 
     public int getId() {

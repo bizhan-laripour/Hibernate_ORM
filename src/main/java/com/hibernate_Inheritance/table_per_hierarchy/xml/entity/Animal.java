@@ -2,6 +2,7 @@ package com.hibernate_Inheritance.table_per_hierarchy.xml.entity;
 
 public class Animal {
 
+
     private int id;
 
     private String name;

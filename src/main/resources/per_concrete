@@ -12,6 +12,7 @@
 
         <union-subclass name="com.hibernate_Inheritance.table_per_concrete_class.xml.entity.Cat">
             <property name="tail"/>
+
         </union-subclass>
 
         <union-subclass name="com.hibernate_Inheritance.table_per_concrete_class.xml.entity.Dog">

@@ -10,6 +10,7 @@ public class Animal {
     @GeneratedValue(strategy = GenerationType.AUTO) // it must be auto or increment in this strategy
     private int id;
 
+
     private String name;
 
     private String gender;

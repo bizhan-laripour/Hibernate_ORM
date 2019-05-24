@@ -12,7 +12,9 @@ public class PerSubClass {
 
     public static void main(String[] args) {
 
-
+        System.out.println("this is hibernate inheritance");
+        System.out.println("this is table per subclass");
+        System.out.println("----------------------------------------------------");
         Configuration configuration = new Configuration();
         configuration.configure("hibernate.config");
         SessionFactory sessionFactory = configuration.buildSessionFactory();

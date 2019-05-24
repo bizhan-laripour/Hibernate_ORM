@@ -16,6 +16,7 @@
 
         <joined-subclass name="com.hibernate_Inheritance.table_per_subClass.xml.entity.Dog">
             <key column="animalId"/>
+
             <property name="voice"/>
         </joined-subclass>
     </class>

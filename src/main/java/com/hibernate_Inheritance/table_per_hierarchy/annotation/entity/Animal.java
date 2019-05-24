@@ -9,6 +9,7 @@ import javax.persistence.*;
 @DiscriminatorValue("animal")
 public class Animal {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
