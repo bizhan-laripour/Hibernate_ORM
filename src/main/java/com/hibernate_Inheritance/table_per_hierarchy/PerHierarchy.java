@@ -20,6 +20,7 @@ public class PerHierarchy {
         Session session = factory.openSession();
         Transaction transaction = session.beginTransaction();
 
+
         Animal animal = new Animal();
         animal.setName("animal");
         animal.setGender("male");

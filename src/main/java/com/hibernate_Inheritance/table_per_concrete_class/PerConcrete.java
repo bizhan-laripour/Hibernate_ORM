@@ -13,7 +13,7 @@ public class PerConcrete {
     public static void main(String[] args) {
         System.out.println("this is for inheritance");
         System.out.println("this is for per concrete class");
-
+        System.out.println("-----------------------------------------------");
         Configuration configuration = new Configuration();
         configuration.configure("hibernate.config");
         SessionFactory factory = configuration.buildSessionFactory();

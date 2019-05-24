@@ -12,6 +12,7 @@ public class Cat extends Animal {
 
     private String tail;
 
+
     public String getTail() {
         return tail;
     }

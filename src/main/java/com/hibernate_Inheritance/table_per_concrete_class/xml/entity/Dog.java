@@ -4,6 +4,7 @@ public class Dog extends Animal {
 
     private String voice;
 
+
     public String getVoice() {
         return voice;
     }
